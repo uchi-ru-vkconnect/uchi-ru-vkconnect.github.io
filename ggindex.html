@@ -1,0 +1,153 @@
+<!-- <style>
+    @keyframes anim {
+        0% {
+            /* Тут аписываются свойства для нач. кадра */
+        }
+        50% {
+            /* Тут серединка */
+        }
+        100% {
+            /* тут описываются свойства для конеч. кадра */
+        }
+    }
+
+    .dsd {
+        padding: 25px;
+        box-sizing: border-box;
+        margin: 100px auto;
+
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+        animation-duration: ;
+    }
+
+    @keyframes puls {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.5);
+            box-shadow: 0px 0px 10px 10px gray;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+</style> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css"
+        integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class='row'>
+        <div class='button button-1'> Нажми на меня </div>
+        <div class='button button-2'> Нажми на меня </div>
+        <div class='button button-3'> Нажми на меня </div>
+    </div>
+
+    <div class="container">
+        <div class="ball ball-1"></div>
+        <div class="ball ball-2"></div>
+        <div class="ball ball-3"></div>
+    </div>
+
+    <style>
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+            color: wheat;
+            background: coral;
+            font-size: 20px;
+            margin: 50px;
+        }
+        .button-1 {
+            /* чьл изменяем */
+            transition-property: transform;   
+             /*Врмя изменения  */
+            transition-duration: 1s;
+            transition-delay: .1s;
+        }
+        .button-1:hover {
+            transform: scale(1.2);
+        }
+
+        .button-2 {
+            border: 2px solid coral;
+            transition-property: background, color;
+            transition-duration: 1s;
+            transition-delay: .1s;
+        }
+        .button-2:hover {
+            background: white;
+            color: coral;
+        }
+
+        .button-3 {
+            transition-property: border-radius, background;
+            transition-duration: 1s;
+            transition-delay: .1s;
+        }
+        .button-3:hover {
+            border-radius: 20px;
+            background: rgb(187, 97, 64);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: 100px;
+        }
+
+        .ball-1 {
+            animation: motin 1.5s ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background: palegreen;
+        }
+
+        .ball-2 {
+            animation: motin 2s ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background: palevioletred;
+        }
+
+        .ball-3 {
+            animation: motin 3s ease-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            background: paleturquoise;
+        }
+        
+        @keyframes motin {
+            0% {
+                transform: scale(0.5);
+            }
+            50% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.5);
+            }
+        }
+
+    </style>
+</body>
+
+</html>

